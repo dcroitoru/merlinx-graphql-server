@@ -2,7 +2,8 @@ const typeDefs =
 `
   type Query {
     user(id: ID!): User
-    autosuggest(name: String!): City
+    autosuggest(name: String!): [City]
+    offer: [Offer]
   }
   type User {
     id: ID!
@@ -11,8 +12,17 @@ const typeDefs =
 
   # This is a city
   type City {
+    cityId: ID!
+    cityName: String
+    lat: String
+    lng: String
+  }
+
+  # This is an offer
+  type Offer {
     id: ID!
-    name: String
+    price: String
+    operCurr: String
   }
 `
 
