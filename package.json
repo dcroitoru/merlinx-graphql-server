@@ -1,0 +1,27 @@
+{
+  "name": "@dcroitoru/server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.24.0",
+    "node-fetch": "^2.1.2",
+    "xml2js": "^0.4.19",
+    "xml2js-parser": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
